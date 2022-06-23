@@ -1,0 +1,37 @@
+{
+  "editor.tabSize": 2,
+  "editor.foldingStrategy": "indentation",
+  "editor.formatOnSave": false,
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.suggestSelection": "first",
+  "eslint.workingDirectories": ["./packages/*", "./apps/*"],
+  "typescript.referencesCodeLens.enabled": false,
+  "typescript.suggest.autoImports": true,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "[mdx]": {
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.formatOnSave": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
