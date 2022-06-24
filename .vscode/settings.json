@@ -5,9 +5,6 @@
   "editor.wordWrap": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.suggestSelection": "first",
-  "eslint.workingDirectories": ["./packages/*", "./apps/*"],
-  "typescript.referencesCodeLens.enabled": false,
-  "typescript.suggest.autoImports": true,
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -33,5 +30,6 @@
   "[yaml]": {
     "editor.formatOnSave": true
   },
+  "typescript.suggest.autoImports": true,
   "typescript.tsdk": "node_modules/typescript/lib"
 }

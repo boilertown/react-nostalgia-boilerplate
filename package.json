@@ -1,8 +1,17 @@
 {
+  "name": "fluffy-tomatoes",
   "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipetowns/fluffy-tomatoes.git"
+  },
   "scripts": {
-    "prepare": "husky install",
-    "lint": "yarn eslint . --ext .ts,.tsx,.js,.jsx"
+    "build": "webpack --config webpack/webpack.prod.js",
+    "dev": "webpack serve --config webpack/webpack.dev.js",
+    "lint": "yarn eslint . --ext .ts,.tsx,.js,.jsx",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -13,16 +22,32 @@
       "prettier --write"
     ]
   },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "styled-components": "^5.3.5"
+  },
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@babel/runtime-corejs3": "^7.18.3",
     "@changesets/changelog-github": "^0.4.4",
     "@changesets/cli": "^2.22.0",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "@types/webpack-env": "^1.17.0",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
+    "babel-loader": "^8.2.5",
     "chalk": "^5.0.1",
     "compression": "^1.7.4",
+    "copy-webpack-plugin": "^11.0.0",
+    "dotenv": "^16.0.1",
+    "dotenv-webpack": "^7.1.0",
     "eslint": "8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -31,14 +56,20 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.5.1",
     "express": "^4.18.1",
+    "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.0",
     "prettier": "^2.6.2",
+    "ts-loader": "^9.3.1",
     "tsc": "^2.0.4",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.3",
+    "webpack": "^5.73.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-dev-server": "^4.9.2",
+    "webpack-merge": "^5.8.0"
   },
+  "packageManager": "pnpm@7.3.0",
   "engines": {
     "node": ">=16.0.0"
-  },
-  "packageManager": "pnpm@7.3.0"
+  }
 }
