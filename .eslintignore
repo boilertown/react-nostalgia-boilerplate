@@ -1,6 +1,3 @@
 build/
 dist/
-playground/
 storybook-static/
-packages/**/docs
-packages/**/stories
