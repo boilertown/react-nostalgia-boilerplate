@@ -3,7 +3,7 @@ const Dotenv = require('dotenv-webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, '../src/main.tsx'),
+  entry: path.resolve(__dirname, '../src/app/index.tsx'),
   target: 'web',
   module: {
     rules: [
@@ -16,7 +16,14 @@ module.exports = {
   plugins: [
     new Dotenv(),
     new CopyPlugin({
-      patterns: [path.resolve(__dirname, '../src/assets/robots.txt')],
+      patterns: [
+        path.resolve(__dirname, '../src/assets/static/robots.txt'),
+        path.resolve(__dirname, '../src/assets/images/favicon.ico'),
+        {
+          from: path.resolve(__dirname, '../src/assets/css'),
+          to: 'css',
+        },
+      ],
     }),
   ],
   resolve: {

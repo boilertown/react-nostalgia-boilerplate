@@ -18,7 +18,7 @@ module.exports = merge(webpackBaseConfig, {
       {
         test: /\.tsx?$/,
         /**
-         * No `ts-loader` since we need to optimize fatser speed.
+         * No `ts-loader` since we need faster build speed.
          */
         use: ['babel-loader'],
         exclude: /node_modules/,
@@ -49,6 +49,7 @@ module.exports = merge(webpackBaseConfig, {
     new HtmlWebpackPlugin({
       inject: true,
       template: path.resolve(__dirname, '../src/index.ejs'),
+      favicon: path.resolve(__dirname, '../src/assets/images/favicon.ico'),
       minify: {
         removeComments: true,
         collapseWhitespace: true,
