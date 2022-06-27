@@ -3,7 +3,7 @@ const Dotenv = require('dotenv-webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, '../src/app/index.tsx'),
+  entry: path.resolve(__dirname, '../src/app.tsx'),
   target: 'web',
   module: {
     rules: [
