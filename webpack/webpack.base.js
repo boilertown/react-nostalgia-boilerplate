@@ -16,7 +16,13 @@ module.exports = {
   plugins: [
     new Dotenv(),
     new CopyPlugin({
-      patterns: [path.resolve(__dirname, '../src/assets/robots.txt')],
+      patterns: [
+        path.resolve(__dirname, '../src/assets/static/robots.txt'),
+        {
+          from: path.resolve(__dirname, '../src/assets/css'),
+          to: 'css',
+        },
+      ],
     }),
   ],
   resolve: {
