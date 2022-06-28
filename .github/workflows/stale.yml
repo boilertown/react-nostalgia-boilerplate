@@ -1,0 +1,23 @@
+# https://github.com/actions/stale
+name: Close stale Issues/Pull Requests
+
+on:
+  schedule:
+    # https://crontab.guru/#0_7_*_*_1
+    - cron: '0 7 * * 1'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          days-before-stale: 30
+          days-before-close: 14
+          stale-issue-label: 'Stale'
+          close-issue-label: 'Abandoned'
+          stale-issue-message: 'This issue is stale because it has been open 30 days with no activity. Remove stale label or comment or this will be closed in 14 days.'
+          stale-pr-label: 'Stale'
+          close-pr-label: 'Abandoned'
+          stale-pr-message: 'This pull request is stale because it has been open 30 days with no activity. Remove stale label or comment or this will be closed in 14 days.'
