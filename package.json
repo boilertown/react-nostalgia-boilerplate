@@ -1,11 +1,11 @@
 {
-  "name": "fluffy-tomatoes",
+  "name": "react-nostalgia",
   "private": true,
   "version": "0.0.0",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipetowns/fluffy-tomatoes.git"
+    "url": "https://github.com/boilertowns/react-nostalgia.git"
   },
   "scripts": {
     "build": "webpack --config webpack/webpack.prod.js",
