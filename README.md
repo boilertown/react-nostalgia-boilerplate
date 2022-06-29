@@ -1,4 +1,4 @@
-# BoilerTowns - React Nostalgia
+# React Nostalgia
 
 ## Install
 
@@ -20,14 +20,4 @@ pnpm run dev
 
 ```shell
 pnpm run build
-```
-
-## Push to your repo
-
-```shell
-git add .
-git commit -m "Init project"
-git remote add origin https://github.com/your_username/your_git_repo.git
-git branch -M main
-git push -u origin main
 ```

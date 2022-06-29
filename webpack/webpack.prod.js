@@ -4,6 +4,7 @@ const webpackBaseConfig = require('./webpack.base');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -49,7 +50,6 @@ module.exports = merge(webpackBaseConfig, {
     new HtmlWebpackPlugin({
       inject: true,
       template: path.resolve(__dirname, '../src/index.ejs'),
-      favicon: path.resolve(__dirname, '../src/assets/images/favicon.ico'),
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -63,6 +63,7 @@ module.exports = merge(webpackBaseConfig, {
         minifyURLs: true,
       },
     }),
+    new CssMinimizerPlugin(),
     process.env.WEBPACK_ANALYZE ? new BundleAnalyzerPlugin() : () => null,
   ],
 });
