@@ -1,15 +1,34 @@
-import { Helmet } from 'react-helmet-async';
+import { FeatureCard } from 'components/FeatureCard';
+import { HomeContent } from 'components/HomeContent';
+import { HomeGrid } from 'components/HomeGrid';
+import { SingleColumnLayout } from 'components/Layouts';
+import { Typography } from 'components/Typography';
 
 const HomePage = () => {
   return (
-    <>
-      <Helmet>
-        <title>Home | Pipetowns.dev</title>
-        <meta name="description" content="Pipetowns application" />
-      </Helmet>
-
-      <h1>Welcome to Pipetowns</h1>
-    </>
+    <SingleColumnLayout
+      renderHeader={null}
+      renderMain={
+        <HomeContent>
+          <Typography.Title weight="bold" align="center">
+            Welcome to Boilertowns
+          </Typography.Title>
+          <HomeGrid>
+            <FeatureCard
+              title="Typescript"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              className="gradient-0"
+            />
+            <FeatureCard
+              title="Static Code Analysis and Auto Format"
+              description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              className="gradient-1"
+            />
+          </HomeGrid>
+        </HomeContent>
+      }
+      renderFooter={null}
+    />
   );
 };
 
