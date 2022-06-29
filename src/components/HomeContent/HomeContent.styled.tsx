@@ -3,5 +3,11 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   max-width: 1024px;
   margin: 0 auto;
-  padding: 6em 0;
+
+  img.hello {
+    max-width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
 `;

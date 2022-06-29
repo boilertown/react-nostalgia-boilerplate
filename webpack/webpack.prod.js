@@ -49,7 +49,6 @@ module.exports = merge(webpackBaseConfig, {
     new HtmlWebpackPlugin({
       inject: true,
       template: path.resolve(__dirname, '../src/index.ejs'),
-      favicon: path.resolve(__dirname, '../src/assets/images/favicon.ico'),
       minify: {
         removeComments: true,
         collapseWhitespace: true,
