@@ -4,13 +4,13 @@ declare namespace NodeJS {
     /**
      * Main app url.
      *
-     * @example 'https://pipetowns.dev'
+     * @example 'https://boilertowns.dev'
      */
     APP_URL: string;
     /**
      * Base api url.
      *
-     * @example 'https://api.pipetowns.dev'
+     * @example 'https://api.boilertowns.dev'
      */
     API_URL: string;
   }

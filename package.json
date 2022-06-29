@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack/webpack.prod.js",
-    "dev": "webpack serve --config webpack/webpack.dev.js",
+    "dev": "webpack serve --config webpack/webpack.dev.js --port 2022",
     "serve": "http-server ./build",
     "test": "jest",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
@@ -61,6 +61,7 @@
     "chalk": "^5.0.1",
     "compression": "^1.7.4",
     "copy-webpack-plugin": "^11.0.0",
+    "css-minimizer-webpack-plugin": "^4.0.0",
     "dotenv": "^16.0.1",
     "dotenv-webpack": "^7.1.0",
     "eslint": "8.18.0",

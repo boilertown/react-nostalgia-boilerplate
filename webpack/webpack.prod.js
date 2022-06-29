@@ -4,6 +4,7 @@ const webpackBaseConfig = require('./webpack.base');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -62,6 +63,7 @@ module.exports = merge(webpackBaseConfig, {
         minifyURLs: true,
       },
     }),
+    new CssMinimizerPlugin(),
     process.env.WEBPACK_ANALYZE ? new BundleAnalyzerPlugin() : () => null,
   ],
 });

@@ -3,8 +3,6 @@ const { merge } = require('webpack-merge');
 const webpackBaseConfig = require('./webpack.base');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const port = 9000;
-
 module.exports = merge(webpackBaseConfig, {
   mode: 'development',
   output: {
@@ -27,7 +25,6 @@ module.exports = merge(webpackBaseConfig, {
     ],
   },
   devServer: {
-    port,
     historyApiFallback: true,
     static: path.resolve(__dirname, '../build'),
     hot: true,
