@@ -12,6 +12,8 @@
     "dev": "webpack serve --config webpack/webpack.dev.js --port 2022",
     "serve": "http-server ./build",
     "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "prepare": "husky install"
   },
@@ -46,6 +48,15 @@
     "@changesets/cli": "^2.22.0",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
+    "@storybook/addon-a11y": "^6.5.9",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
@@ -90,8 +101,7 @@
     "webpack-dev-server": "^4.9.2",
     "webpack-merge": "^5.8.0"
   },
-  "packageManager": "yarn@1.19.1",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16"
   }
 }

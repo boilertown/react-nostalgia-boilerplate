@@ -1,9 +1,14 @@
+import { Container } from 'components/Container';
 import * as Sc from './HomeContent.styled';
+import hello_gif from 'assets/images/hello.gif';
 
-interface HomeContentProps {
-  children: React.ReactNode;
-}
-
-export const HomeContent = (props: HomeContentProps) => {
-  return <Sc.Wrapper>{props.children}</Sc.Wrapper>;
+export const HomeContent = () => {
+  return (
+    <Container>
+      <Sc.HelloImg className="hello" src={hello_gif} alt="" />
+      <Sc.Title weight="bold" align="center">
+        Welcome to Boilertowns
+      </Sc.Title>
+    </Container>
+  );
 };

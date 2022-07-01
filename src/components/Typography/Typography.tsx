@@ -1,8 +1,7 @@
 import { TypographyParagraph } from './TypographyParagraph';
-import { TypographyText } from './TypographyText';
 import { TypographyTitle } from './TypographyTitle';
 
-export type TypographySize = 'mini' | 'standard' | 'medium' | 'big';
+export type TypographySize = 'standard' | 'medium' | 'big';
 export type TypographyWeight = 'normal' | 'bold';
 export type TypographyTextAlign =
   | 'center'
@@ -20,10 +19,10 @@ export type TypographyCommonProps = {
 };
 
 /**
- * Display title, subtitle, simple text or paragraph.
+ * Display heading, simple text or paragraph.
  */
 export const Typography = (props: { children: React.ReactNode }) => {
-  return props.children;
+  return <>{props.children}</>;
 };
 
 /**
@@ -37,16 +36,6 @@ export const Typography = (props: { children: React.ReactNode }) => {
  * </Typography.Title>
  */
 Typography.Title = TypographyTitle;
-
-/**
- * Display simple inline text using `<span>` tag.
- *
- * @example
- * <Typography.Text>
- *   <!-- your content here -->
- * </Typography.Text>
- */
-Typography.Text = TypographyText;
 
 /**
  * Display a paragraph using `<p>` tag.
