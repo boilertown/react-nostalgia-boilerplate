@@ -1,11 +1,6 @@
 import { css } from 'styled-components';
 import type { TypographySize } from './Typography';
 
-const Mini = css`
-  font-size: 13px;
-  line-height: 20px;
-`;
-
 const Standard = css`
   font-size: 16px;
   line-height: 24px;
@@ -23,8 +18,6 @@ const Big = css`
 
 export const getTextStyles = (type?: TypographySize) => {
   switch (type) {
-    case 'mini':
-      return Mini;
     case 'medium':
       return Medium;
     case 'big':
