@@ -1,11 +1,11 @@
 import { Container } from 'components/Container';
 import * as Sc from './HomeContent.styled';
-import hello_gif from 'assets/images/hello.gif';
+import hello_img from 'assets/images/hello.svg';
 
 export const HomeContent = () => {
   return (
     <Container>
-      <Sc.HelloImg className="hello" src={hello_gif} alt="" />
+      <Sc.HelloImg src={hello_img} alt="" />
       <Sc.Title weight="bold" align="center">
         Welcome to Boilertowns
       </Sc.Title>
