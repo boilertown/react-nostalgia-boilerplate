@@ -9,7 +9,7 @@ dayjs.extend(calendar);
 dayjs.extend(utc);
 
 export const App = () => {
-  return <RootRouter />;
+	return <RootRouter />;
 };
 
 App.displayName = 'App.FluffyTomatoes';

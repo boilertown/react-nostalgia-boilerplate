@@ -7,11 +7,11 @@ const container = document.getElementById('app');
 const root = createRoot(container as HTMLElement);
 
 root.render(
-  <HelmetProvider>
-    <BrowserRouter history={history}>
-      <StrictMode>
-        <App />
-      </StrictMode>
-    </BrowserRouter>
-  </HelmetProvider>
+	<HelmetProvider>
+		<BrowserRouter history={history}>
+			<StrictMode>
+				<App />
+			</StrictMode>
+		</BrowserRouter>
+	</HelmetProvider>,
 );

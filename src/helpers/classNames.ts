@@ -5,5 +5,5 @@
  * @returns a concat classNames string.
  */
 export const classNames = (...names: (string | undefined)[]): string => {
-  return names.filter((name) => !!name).join(' ');
+	return names.filter((name) => !!name).join(' ');
 };

@@ -4,25 +4,25 @@ import { TypographyTitle } from './TypographyTitle';
 export type TypographySize = 'standard' | 'medium' | 'big';
 export type TypographyWeight = 'normal' | 'bold';
 export type TypographyTextAlign =
-  | 'center'
-  | 'left'
-  | 'right'
-  | 'justify'
-  | 'initial'
-  | 'inherit';
+	| 'center'
+	| 'left'
+	| 'right'
+	| 'justify'
+	| 'initial'
+	| 'inherit';
 
 export type TypographyCommonProps = {
-  align?: TypographyTextAlign;
-  weight?: TypographyWeight;
-  size?: TypographySize;
-  children: React.ReactNode;
+	align?: TypographyTextAlign;
+	weight?: TypographyWeight;
+	size?: TypographySize;
+	children: React.ReactNode;
 };
 
 /**
  * Display heading, simple text or paragraph.
  */
 export const Typography = (props: { children: React.ReactNode }) => {
-  return <>{props.children}</>;
+	return <>{props.children}</>;
 };
 
 /**
