@@ -5,9 +5,9 @@ import { Router } from 'react-router-dom';
 export const history = createBrowserHistory({ window });
 
 interface BrowserRouterProps {
-  basename?: string;
-  children?: React.ReactNode;
-  history: History;
+	basename?: string;
+	children?: React.ReactNode;
+	history: History;
 }
 
 /**
@@ -22,25 +22,25 @@ interface BrowserRouterProps {
  * @see https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/index.tsx#L222
  */
 export const BrowserRouter = ({
-  basename,
-  children,
-  history,
+	basename,
+	children,
+	history,
 }: BrowserRouterProps) => {
-  const [state, setState] = useState({
-    action: history.action,
-    location: history.location,
-  });
+	const [state, setState] = useState({
+		action: history.action,
+		location: history.location,
+	});
 
-  useLayoutEffect(() => history.listen(setState), [history]);
+	useLayoutEffect(() => history.listen(setState), [history]);
 
-  return (
-    <Router
-      basename={basename}
-      // eslint-disable-next-line react/no-children-prop
-      children={children}
-      location={state.location}
-      navigationType={state.action}
-      navigator={history}
-    />
-  );
+	return (
+		<Router
+			basename={basename}
+			// eslint-disable-next-line react/no-children-prop
+			children={children}
+			location={state.location}
+			navigationType={state.action}
+			navigator={history}
+		/>
+	);
 };

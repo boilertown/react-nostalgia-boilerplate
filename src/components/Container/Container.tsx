@@ -1,9 +1,9 @@
 import * as Sc from './Container.styled';
 
 interface CenterContainerProps {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }
 
 export const Container = (props: CenterContainerProps) => {
-  return <Sc.Container>{props.children}</Sc.Container>;
+	return <Sc.Container>{props.children}</Sc.Container>;
 };
