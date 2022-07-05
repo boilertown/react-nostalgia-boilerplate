@@ -1,7 +1,7 @@
 import styled from 'styled-components';
+import { getTextStyles } from './getStyles';
 import type { TypographyCommonProps } from './Typography';
 import type { TypographyTitleProps } from './TypographyTitle';
-import { getTextStyles } from './getStyles';
 
 export const Heading = styled.div<TypographyTitleProps>`
 	margin: 0;

@@ -1,11 +1,11 @@
 const path = require('path');
-const { merge } = require('webpack-merge');
-const webpackBaseConfig = require('./webpack.base');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const dotenv = require('dotenv');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const dotenv = require('dotenv');
+const { merge } = require('webpack-merge');
+const webpackBaseConfig = require('./webpack.base');
 
 dotenv.config();
 

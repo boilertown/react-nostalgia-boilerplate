@@ -1,4 +1,4 @@
-import { History, createBrowserHistory } from 'history';
+import { createBrowserHistory, History } from 'history';
 import { useLayoutEffect, useState } from 'react';
 import { Router } from 'react-router-dom';
 

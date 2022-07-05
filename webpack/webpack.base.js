@@ -1,6 +1,6 @@
 const path = require('path');
-const Dotenv = require('dotenv-webpack');
 const CopyPlugin = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
 	entry: path.resolve(__dirname, '../src/main.tsx'),
