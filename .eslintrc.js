@@ -54,6 +54,5 @@ module.exports = {
 		'react-hooks/exhaustive-deps': 'warn',
 		'jsx-a11y/no-noninteractive-element-to-interactive-role': 'warn',
 		'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
-		'prettier/prettier': ['error', { useTabs: true }],
 	},
 };

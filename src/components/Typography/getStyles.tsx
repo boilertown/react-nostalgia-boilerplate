@@ -12,7 +12,7 @@ const Medium = css`
 `;
 
 const Big = css`
-	font-size: 36px;
+	font-size: 48px;
 	line-height: 44px;
 `;
 

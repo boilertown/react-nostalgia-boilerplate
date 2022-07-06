@@ -64,6 +64,6 @@ module.exports = merge(webpackBaseConfig, {
 			},
 		}),
 		new CssMinimizerPlugin(),
-		process.env.WEBPACK_ANALYZE ? new BundleAnalyzerPlugin() : () => null,
+		process.env.WEBPACK_ANALYZER ? new BundleAnalyzerPlugin() : () => null,
 	],
 });

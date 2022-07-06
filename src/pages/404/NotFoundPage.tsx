@@ -1,4 +1,3 @@
-import { Container } from 'components/Container';
 import { SingleColumnLayout } from 'components/Layouts';
 import { Typography } from 'components/Typography';
 
@@ -6,11 +5,7 @@ const NotFoundPage = () => {
 	return (
 		<SingleColumnLayout
 			renderHeader={null}
-			renderMain={
-				<Container>
-					<Typography.Title>404 - Not found</Typography.Title>
-				</Container>
-			}
+			renderMain={<Typography.Title>404 - Not found</Typography.Title>}
 			renderFooter={null}
 		/>
 	);
