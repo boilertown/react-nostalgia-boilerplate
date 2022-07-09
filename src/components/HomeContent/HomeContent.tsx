@@ -1,14 +1,23 @@
-import { Container } from 'components/Container';
+import { Counter } from 'components/Counter';
 import * as Sc from './HomeContent.styled';
-import hello_img from 'assets/images/hello.svg';
+import launch_img from 'assets/images/launch.png';
 
 export const HomeContent = () => {
 	return (
-		<Container>
-			<Sc.HelloImg src={hello_img} alt="" />
-			<Sc.Title weight="bold" align="center">
+		<>
+			<Sc.Figure>
+				<img src={launch_img} alt="A rocket is being launched" />
+				<figcaption>
+					Illustration by{' '}
+					<a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">
+						Icons 8
+					</a>
+				</figcaption>
+			</Sc.Figure>
+			<Sc.Heading size="big" weight="bold" align="center">
 				Welcome to Boilertowns
-			</Sc.Title>
-		</Container>
+			</Sc.Heading>
+			<Counter />
+		</>
 	);
 };

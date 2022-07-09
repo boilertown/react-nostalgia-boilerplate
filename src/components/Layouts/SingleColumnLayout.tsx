@@ -13,7 +13,9 @@ export const SingleColumnLayout = (props: SingleColumnLayoutProps) => {
 	return (
 		<>
 			<header>{props.renderHeader}</header>
-			<Sc.Main>{props.renderMain}</Sc.Main>
+			<main>
+				<Sc.Container>{props.renderMain}</Sc.Container>
+			</main>
 			<footer>{props.renderFooter}</footer>
 		</>
 	);
