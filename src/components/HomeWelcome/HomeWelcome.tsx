@@ -1,8 +1,7 @@
-import { Counter } from 'components/Counter';
-import * as Sc from './HomeContent.styled';
+import * as Sc from './HomeWelcome.styled';
 import launch_img from 'assets/images/launch.png';
 
-export const HomeContent = () => {
+export const HomeWelcome = () => {
 	return (
 		<>
 			<Sc.Figure>
@@ -17,7 +16,6 @@ export const HomeContent = () => {
 			<Sc.Heading size="big" weight="bold" align="center">
 				Welcome to Boilertowns
 			</Sc.Heading>
-			<Counter />
 		</>
 	);
 };
