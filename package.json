@@ -1,11 +1,11 @@
 {
-	"name": "react-nostalgia",
+	"name": "nostalgia-boilerplate",
 	"private": true,
 	"version": "0.0.0",
 	"description": "",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/boilertowns/react-nostalgia.git"
+		"url": "https://github.com/boilertowns/nostalgia-boilerplate.git"
 	},
 	"scripts": {
 		"build": "webpack --config webpack/webpack.prod.js",
