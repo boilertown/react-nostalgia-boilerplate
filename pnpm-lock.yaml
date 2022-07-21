@@ -31,8 +31,6 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.30.7
   '@typescript-eslint/parser': ^5.30.7
   babel-loader: ^8.2.5
-  chalk: ^5.0.1
-  compression: ^1.7.4
   copy-webpack-plugin: ^11.0.0
   core-js: ^3.23.5
   css-minimizer-webpack-plugin: ^4.0.0
@@ -110,8 +108,6 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.30.7_7jesf5hgpb6ybpx77f6uvjxuca
   '@typescript-eslint/parser': 5.30.7_b5e7v2qnwxfo6hmiq56u52mz3e
   babel-loader: 8.2.5_sqoqrlbh4fciq6urcohea2fb5a
-  chalk: 5.0.1
-  compression: 1.7.4
   copy-webpack-plugin: 11.0.0_webpack@5.73.0
   css-minimizer-webpack-plugin: 4.0.0_webpack@5.73.0
   dotenv: 16.0.1
@@ -6411,11 +6407,6 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-    dev: true
-
-  /chalk/5.0.1:
-    resolution: {integrity: sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
   /char-regex/1.0.2:
