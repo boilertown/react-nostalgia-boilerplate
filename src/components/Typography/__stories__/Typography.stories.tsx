@@ -1,10 +1,10 @@
-import { ComponentStory } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Typography } from '../Typography';
 
 export default {
 	title: 'Components/Typography',
 	component: Typography,
-};
+} as ComponentMeta<typeof Typography>;
 
 export const Default = () => {
 	return (
