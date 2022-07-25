@@ -1,21 +1,21 @@
 {
-	"name": "nostalgia-boilerplate",
-	"private": true,
+	"name": "react-nostalgia-boilerplate",
 	"version": "0.0.0",
-	"description": "",
+	"private": true,
+	"description": "Full-pledged React boilerplate to quickly kickstart your applications",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/boilertowns/nostalgia-boilerplate.git"
+		"url": "https://github.com/boilertowns/react-nostalgia-boilerplate.git"
 	},
 	"scripts": {
 		"build": "webpack --config webpack/webpack.prod.js",
 		"dev": "webpack serve --config webpack/webpack.dev.js --port 2022",
+		"lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+		"prepare": "husky install",
 		"serve": "http-server ./build",
-		"test": "jest",
 		"storybook": "start-storybook -p 6006",
 		"storybook:build": "build-storybook",
-		"lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-		"prepare": "husky install"
+		"test": "jest"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
