@@ -1,15 +1,15 @@
-<h1 align="center">♨️ Nostalgia Boilerplate</h1>
+<h1 align="center">♨️ React Nostalgia Boilerplate</h1>
 
 <div align="center">
   <p>
     A React boilerplate with opinionated setup to help you quickly kickstart your applications.
   </p>
-  <img src="https://img.shields.io/github/license/boilertowns/nostalgia-boilerplate?style=flat-square" alt="MIT license" >
+  <img src="https://img.shields.io/github/license/boilertowns/react-nostalgia-boilerplate?style=flat-square" alt="MIT license" >
 </div>
 
 ## Introduction
 
-**nostalgian-boilerplate** is the first production-ready boilerplate from [Boilertowns][boilertowns-url] creations.
+**react-nostalgia-boilerplate** is the first production-ready boilerplate from [Boilertowns][boilertowns-url] creations.
 
 The goal of this boilerplate is to maximize your effectiveness by present you:
 
@@ -38,16 +38,16 @@ This setup is _opinionated_ as it is based on my experience of working with diff
 
   ```sh
   # npm
-  npm init boilertowns -- -b nostalgia-boilerplate
+  npm init boilertowns -- -b react-nostalgia-boilerplate
 
   # yarn
-  yarn create boilertowns -b nostalgia-boilerplate
+  yarn create boilertowns -b react-nostalgia-boilerplate
 
   # pnpm
-  pnpm dlx create-boilertowns -b nostalgia-boilerplate
+  pnpm dlx create-boilertowns -b react-nostalgia-boilerplate
 
   # bun
-  bun create boilertowns/nostalgia-boilerplate [project-name]
+  bun create boilertowns/react-nostalgia-boilerplate [project-name]
   ```
 
 - Click the green "Use this template" button to generate a new repository with the same structure and files.
@@ -64,7 +64,7 @@ This setup is _opinionated_ as it is based on my experience of working with diff
 
 ## Contributing
 
-**nostalgia-boilerplate** ❤️ your contributions. If you have any ideas, suggestions, fixes, feel free to contribute.
+**react-nostalgia-boilerplate** ❤️ your contributions. If you have any ideas, suggestions, fixes, feel free to contribute.
 
 ## Inspirations
 
