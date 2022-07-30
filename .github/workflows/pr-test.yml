@@ -1,4 +1,4 @@
-name: PR Unit Test
+name: PR Test
 
 on:
   pull_request:
@@ -7,26 +7,37 @@ on:
       - main
 
 jobs:
+  unit-test:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.5.0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Unit test
+        run: pnpm test:jest
   e2e-test:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7.5.0
-
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'pnpm'
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-
-      - name: Install Playwright Browsers
+      - name: Install Playwright browsers
         run: pnpm exec playwright install --with-deps
-
-      - name: Unit test
+      - name: E2E test
         run: pnpm test:e2e
