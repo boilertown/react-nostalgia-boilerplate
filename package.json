@@ -12,12 +12,12 @@
 		"dev": "webpack serve --config webpack/webpack.dev.js --port 2022",
 		"lint": "eslint . --ext .ts,.tsx,.js,.jsx",
 		"prepare": "husky install",
-		"serve": "http-server ./build",
+		"serve": "http-server -p 2022 ./build",
 		"storybook": "start-storybook -p 6006",
 		"storybook:build": "build-storybook",
 		"test:jest": "jest",
 		"test:e2e": "playwright test",
-		"test:e2e:ci-run": "start-server-and-test dev http://localhost:2022 test:e2e"
+		"test:e2e:ci-run": "start-server-and-test serve http://localhost:2022 test:e2e"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [

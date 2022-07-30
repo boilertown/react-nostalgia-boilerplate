@@ -19,6 +19,6 @@ test.describe('Homepage', () => {
 		// click to increase value
 		await countButton.click();
 		await countButton.click();
-		await expect(countButton).toContainText('Count: 2');
+		await expect(countButton).toContainText('Count: 3');
 	});
 });
