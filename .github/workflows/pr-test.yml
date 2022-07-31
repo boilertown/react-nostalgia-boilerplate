@@ -3,8 +3,7 @@ name: PR Test
 on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
-    branches:
-      - main
+    branches: [main, master]
 
 jobs:
   unit-test:
