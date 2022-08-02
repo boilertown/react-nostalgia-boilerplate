@@ -58,11 +58,39 @@ This setup is _opinionated_ as it is based on my experience of working with diff
 
 ## Development
 
-- `yarn dev` run the app in development environment.
-- `yarn test:jest` run components unit tests with jest.
-- `yarn test:e2e` run e2e tests with playwright.
-- `yarn build` build the app for production uses.
-- `yarn serve` run the app in production environment. It uses files from `build` folder which is created from buld command above.
+- Run the app in development environment:
+
+  ```sh
+  pnpm dev
+  ```
+
+- Run components unit tests with jest:
+
+  ```sh
+  pnpm test:jest
+  ```
+
+- Run e2e tests with playwright:
+
+  ```sh
+  pnpm test:e2e
+  ```
+
+- Build the app in production mode:
+
+  ```sh
+  pnpm build
+  ```
+
+- Run the app in production mode. It uses static files from `build` folder.
+
+  ```sh
+  pnpm serve
+  ```
+
+## GitHub Actions
+
+This boilerplate uses [GitHub Actions](https://github.com/features/actions) to perform unit test on Pull Request. You can see the details at [pr-test.yml](./.github/workflows/pr-test.yml).
 
 ## Contributing
 
