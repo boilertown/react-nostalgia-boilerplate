@@ -38,13 +38,13 @@ This setup is _opinionated_ as it is based on my experience of working with diff
 
   ```sh
   # npm
-  npm init boilertowns -- -b react-nostalgia-boilerplate
+  npm create boilertowns@latest -- -b react-nostalgia-boilerplate
 
   # yarn
   yarn create boilertowns -b react-nostalgia-boilerplate
 
   # pnpm
-  pnpm dlx create-boilertowns -b react-nostalgia-boilerplate
+  pnpm create boilertowns -b react-nostalgia-boilerplate
 
   # bun
   bun create boilertowns/react-nostalgia-boilerplate [project-name]
