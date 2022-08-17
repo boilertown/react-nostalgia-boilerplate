@@ -1,6 +1,6 @@
 ## Summary
 
-<!-- Explain what you're trying to archive with this pull request. Provide design URLs in the `References` if needed. -->
+<!-- Explain what you're trying to archive with this pull request. -->
 
 ## References
 
