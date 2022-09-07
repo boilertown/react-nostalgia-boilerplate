@@ -15,7 +15,7 @@
 		"serve": "http-server -p 2022 ./build",
 		"storybook": "start-storybook -p 6006",
 		"storybook:build": "build-storybook",
-		"test:jest": "jest",
+		"test": "jest",
 		"test:e2e": "playwright test",
 		"test:e2e:ci-run": "start-server-and-test serve http://localhost:2022 test:e2e"
 	},

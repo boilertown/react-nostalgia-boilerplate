@@ -26,7 +26,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Unit test
-        run: pnpm run test:jest
+        run: pnpm run test
 
   e2e-test:
     if: github.event.pull_request.draft == false

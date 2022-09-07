@@ -67,7 +67,7 @@ This setup is _opinionated_ as it is based on my experience of working with diff
 - Run components unit tests with jest:
 
   ```sh
-  pnpm test:jest
+  pnpm test
   ```
 
 - Run e2e tests with playwright:
