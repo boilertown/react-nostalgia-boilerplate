@@ -36,7 +36,7 @@ module.exports = {
 			},
 		},
 		{
-			files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+			files: ['**/__tests__/**/*.[jt]s?(x)'],
 			extends: ['plugin:testing-library/react'],
 			rules: {
 				'testing-library/await-async-query': 'error',

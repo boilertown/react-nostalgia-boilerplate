@@ -6,19 +6,15 @@ test.describe('Homepage', () => {
 	});
 
 	test('Should have `Welcome to Boilertowns` headline', async ({ page }) => {
-		const headline = page.locator('h1');
-		await expect(headline).toContainText('Welcome to Boilertowns');
+		const headline = page.getByText('Welcome to Boilertowns');
+		await expect(headline).toBeVisible();
 	});
 
 	test('Should have count button and click to increase value', async ({
 		page,
 	}) => {
-		const countButton = page.locator('button');
-		await expect(countButton).toContainText('Count: 0');
-
-		// click to increase value
-		await countButton.click();
-		await countButton.click();
-		await expect(countButton).toContainText('Count: 2');
+		await expect(page.getByRole('button', { name: 'Count: 0' })).toBeVisible();
+		await page.getByRole('button', { name: 'Count: 0' }).click();
+		await expect(page.getByRole('button', { name: 'Count: 1' })).toBeVisible();
 	});
 });
