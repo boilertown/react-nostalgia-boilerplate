@@ -29,7 +29,6 @@ This setup is _opinionated_ as it is based on my experience of working with diff
 - Unit test with [Testing-library][testing-library-url]
 - E2E testing with [Playwright][playwright-url]
 - Linting with [Eslint][eslint-url] and code formatting with [Prettier][prettier-url]
-- Conventional commit messages with [Commitlint][commitlint-url]
 - Develop and build production with [Babel][babel-url] and [Webpack][webpack-url]
 
 ## Get Started
@@ -109,7 +108,6 @@ This boilerplate uses [GitHub Actions](https://github.com/features/actions) to p
 [webpack-url]: https://webpack.js.org
 [storybook-url]: https://storybook.js.org
 [eslint-url]: https://eslint.org
-[commitlint-url]: https://github.com/conventional-changelog/commitlint
 [prettier-url]: https://prettier.io
 [playwright-url]: https://playwright.dev
 [testing-library-url]: https://testing-library.com
