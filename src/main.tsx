@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
-import { App, BrowserRouter, history } from './root-providers';
+import { App, BrowserRouter, history } from './app';
 
 const container = document.getElementById('app');
 const root = createRoot(container as HTMLElement);
