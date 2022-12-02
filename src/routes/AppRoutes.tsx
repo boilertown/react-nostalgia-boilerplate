@@ -16,7 +16,7 @@ export const routes: RouteObject[] = [
 	},
 ];
 
-export const RootRouter = () => {
+export const AppRoutes = () => {
 	const element = useRoutes(routes);
 	return element;
 };

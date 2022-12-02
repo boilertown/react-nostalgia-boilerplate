@@ -1,1 +1,1 @@
-export * from './RootRouter';
+export * from './AppRoutes';
