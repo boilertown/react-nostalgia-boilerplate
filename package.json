@@ -5,7 +5,7 @@
 	"description": "Full-pledged React boilerplate to quickly kickstart your applications",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/boilertowns/react-nostalgia-boilerplate.git"
+		"url": "https://github.com/boilertown/react-nostalgia-boilerplate.git"
 	},
 	"scripts": {
 		"build": "webpack --config webpack/webpack.prod.js",

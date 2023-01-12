@@ -4,12 +4,12 @@
   <p>
     A React boilerplate with opinionated setup to help you quickly kickstart your applications.
   </p>
-  <img src="https://img.shields.io/github/license/boilertowns/react-nostalgia-boilerplate?style=flat-square" alt="MIT license" >
+  <img src="https://img.shields.io/github/license/boilertown/react-nostalgia-boilerplate?style=flat-square" alt="MIT license" >
 </div>
 
 ## Introduction
 
-**react-nostalgia-boilerplate** is the first production-ready boilerplate from [Boilertowns][boilertowns-url] creations.
+**react-nostalgia-boilerplate** is the first production-ready boilerplate from [Boilertown][boilertown-url] creations.
 
 The goal of this boilerplate is to maximize your effectiveness by present you:
 
@@ -33,20 +33,20 @@ This setup is _opinionated_ as it is based on my experience of working with diff
 
 ## Get Started
 
-- Use [Boilertowns](https://github.com/boilertowns/create-boilertowns) CLI.
+- Use [Boilertown](https://github.com/boilertown/create-boilertown) CLI.
 
   ```sh
   # npm
-  npm create boilertowns@latest -- -b react-nostalgia-boilerplate
+  npm create boilertown@latest -- -b react-nostalgia-boilerplate
 
   # yarn
-  yarn create boilertowns -b react-nostalgia-boilerplate
+  yarn create boilertown -b react-nostalgia-boilerplate
 
   # pnpm
-  pnpm create boilertowns -b react-nostalgia-boilerplate
+  pnpm create boilertown -b react-nostalgia-boilerplate
 
   # bun
-  bun create boilertowns/react-nostalgia-boilerplate [project-name]
+  bun create boilertown/react-nostalgia-boilerplate [project-name]
   ```
 
 - Click the green "Use this template" button to generate a new repository with the same structure and files.
@@ -100,7 +100,7 @@ This boilerplate uses [GitHub Actions](https://github.com/features/actions) to p
 - [react-boilerplate][react-boilerplate-url]
 - [bulletproof-react][bulletproof-react-url]
 
-[boilertowns-url]: https://github.com/boilertowns
+[boilertown-url]: https://github.com/boilertown
 [react-url]: https://beta.reactjs.org
 [react-router-url]: https://reactrouter.com
 [typescript-url]: https://www.typescriptlang.org

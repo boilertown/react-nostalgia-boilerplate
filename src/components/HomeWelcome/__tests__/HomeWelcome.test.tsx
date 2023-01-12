@@ -6,7 +6,7 @@ describe('HomeWelcome', () => {
 		render(<HomeWelcome />);
 
 		expect(screen.getByRole('heading')).toHaveTextContent(
-			'Welcome to Boilertowns',
+			'Welcome to Boilertown',
 		);
 	});
 });

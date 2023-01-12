@@ -5,8 +5,8 @@ test.describe('Homepage', () => {
 		await page.goto('http://localhost:2022');
 	});
 
-	test('Should have `Welcome to Boilertowns` headline', async ({ page }) => {
-		const headline = page.getByText('Welcome to Boilertowns');
+	test('Should have `Welcome to Boilertown` headline', async ({ page }) => {
+		const headline = page.getByText('Welcome to Boilertown');
 		await expect(headline).toBeVisible();
 	});
 

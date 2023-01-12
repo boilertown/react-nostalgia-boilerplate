@@ -14,7 +14,7 @@ export const HomeWelcome = () => {
 				</figcaption>
 			</Sc.Figure>
 			<Sc.Heading size="big" weight="bold" align="center">
-				Welcome to Boilertowns
+				Welcome to Boilertown
 			</Sc.Heading>
 		</>
 	);
